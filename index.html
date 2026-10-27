@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feriados Nacionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Aluno(a): ________________________ -->
+    <main>
+        <h1>Feriados Nacionais</h1>
+
+        <div class="busca">
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" placeholder="Ano" min="1900" max="2199" step="1">
+            <button id="btnConsultar">Consultar</button>
+        </div>
+
+        <p id="mensagem" role="status"></p>
+        <p id="total"></p>
+
+        <div id="proximo" hidden></div>
+
+        <table id="tabela" hidden>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Dia da semana</th>
+                    <th>Feriado</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaFeriados"></tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

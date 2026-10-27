@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f8;
+    color: #222;
+    margin: 0;
+    padding: 24px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+h1 { margin-top: 0; color: #1f4e79; }
+
+.busca {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+input, button {
+    font-size: 16px;
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+input { width: 125px; }
+
+button {
+    background: #1f4e79;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover { background: #163a5a; }
+button:disabled { opacity: .6; cursor: wait; }
+
+#total { font-weight: bold; }
+
+#proximo {
+    margin-top: 12px;
+    padding: 12px;
+    background: #e8f2fb;
+    border-left: 4px solid #1f4e79;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+table[hidden], #proximo[hidden] { display: none; }
+
+th, td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th { background: #e8eef5; }
+
+/* Destaque para feriados que caem no sábado ou no domingo. */
+.fim-de-semana { background: #fff0e8; color: #9a3f13; }
+
+.erro { color: #b00020; font-weight: bold; }
